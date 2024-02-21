@@ -19,10 +19,11 @@ export default async function HomePage() {
   const tasks = await loadTasks()
   return (
     <section className="container mx-auto">
+      <h1 className="text-black flex flex-row justify-center my-4">*Click en tarea para editar</h1>
       <div className="grid grid-cols-2 gap-3 mt-10">
         {tasks.map(task => (
           <TaskCard key={task.id} task={task}/>
-        ))}
+          ))}
       </div>
     </section>
   )
