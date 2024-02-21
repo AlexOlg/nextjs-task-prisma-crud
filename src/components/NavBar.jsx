@@ -7,9 +7,9 @@ export default function Navbar ({task}) {
     const router = useRouter()
     return(
         <nav className="bg-slate-900">
-          <div className="container mx-auto flex justify-between items-center py-4">
+          <div className="container mx-auto flex justify-between items-center py-5">
             <Link href="/">
-            <h3 className="font-bold text-3xl">NEXTCrud</h3>
+            <h3 className="font-bold text-3xl">CrudTask ✏</h3>
             </Link>
             <ul className="flex gap-x-2 text-lg font-bold">
               <li>

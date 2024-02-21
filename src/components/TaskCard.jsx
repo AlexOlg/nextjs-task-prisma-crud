@@ -5,7 +5,7 @@ export default function TaskCard ({task}) {
 
     const router = useRouter()
     return(
-        <div className="bg-slate-800 p-3 rounded-xl hover:bg-slate-700 hover:cursor-pointer"
+        <div className="bg-slate-800 p-3 rounded-xl m-3 hover:bg-slate-700 hover:cursor-pointer"
         onClick={() => {
             router.push('/tasks/edit/' + task.id)
         }}

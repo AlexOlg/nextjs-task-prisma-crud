@@ -19,7 +19,7 @@ export default async function HomePage() {
   const tasks = await loadTasks()
   return (
     <section className="container mx-auto">
-      <div className="grid grid-cols-3 gap-3 mt-10">
+      <div className="grid grid-cols-2 gap-3 mt-10">
         {tasks.map(task => (
           <TaskCard key={task.id} task={task}/>
         ))}
